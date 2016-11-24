@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ChameleonFramework
 
 class ViewController: UIViewController {
     
@@ -26,8 +27,8 @@ class ViewController: UIViewController {
         
         //MARK: Customize Button
         signInButton.layer.cornerRadius = signInButton.frame.height / 2
-        signInButton.layer.shadowColor = UIColor.black.cgColor
-        signInButton.layer.shadowOffset = CGSize(width:2, height:2)
+        signInButton.layer.shadowColor = UIColor.flatMintDark.cgColor
+        signInButton.layer.shadowOffset = CGSize(width:4, height:4)
         signInButton.layer.shadowOpacity = 0.3
         
         //MARK: Customize Forget password
