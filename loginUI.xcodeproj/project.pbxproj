@@ -13,6 +13,7 @@
 		214A9F4E1DE6A6EE000E90A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 214A9F4D1DE6A6EE000E90A0 /* Assets.xcassets */; };
 		214A9F511DE6A6EE000E90A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 214A9F4F1DE6A6EE000E90A0 /* LaunchScreen.storyboard */; };
 		214A9F6F1DE6B2FF000E90A0 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214A9F6E1DE6B2FF000E90A0 /* LoginTextField.swift */; };
+		214A9F711DE6E892000E90A0 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214A9F701DE6E892000E90A0 /* SignupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		214A9F6A1DE6AEC9000E90A0 /* SanFranciscoText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoText-Regular.otf"; sourceTree = "<group>"; };
 		214A9F6B1DE6AEC9000E90A0 /* SanFranciscoText-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoText-RegularItalic.otf"; sourceTree = "<group>"; };
 		214A9F6E1DE6B2FF000E90A0 /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		214A9F701DE6E892000E90A0 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				214A9F581DE6AEB6000E90A0 /* fonts */,
 				214A9F461DE6A6EE000E90A0 /* AppDelegate.swift */,
 				214A9F481DE6A6EE000E90A0 /* ViewController.swift */,
+				214A9F701DE6E892000E90A0 /* SignupViewController.swift */,
 				214A9F6E1DE6B2FF000E90A0 /* LoginTextField.swift */,
 				214A9F4A1DE6A6EE000E90A0 /* Main.storyboard */,
 				214A9F4D1DE6A6EE000E90A0 /* Assets.xcassets */,
@@ -164,6 +167,7 @@
 			files = (
 				214A9F6F1DE6B2FF000E90A0 /* LoginTextField.swift in Sources */,
 				214A9F491DE6A6EE000E90A0 /* ViewController.swift in Sources */,
+				214A9F711DE6E892000E90A0 /* SignupViewController.swift in Sources */,
 				214A9F471DE6A6EE000E90A0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
