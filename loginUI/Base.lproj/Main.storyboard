@@ -118,20 +118,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dfr-MP-ddd">
-                                <rect key="frame" x="182" y="453" width="11" height="14"/>
+                                <rect key="frame" x="182" y="457" width="11" height="14"/>
                                 <fontDescription key="fontDescription" name="SanFranciscoText-Light" family="San Francisco Text" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKo-Tv-aud">
-                                <rect key="frame" x="109" y="476" width="157.5" height="19"/>
+                                <rect key="frame" x="109" y="480" width="157.5" height="19"/>
                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Light" family="San Francisco Display" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAd-YS-3Ek">
-                                <rect key="frame" x="105.5" y="491" width="163" height="30"/>
-                                <state key="normal" title="Create new account 😀"/>
+                                <rect key="frame" x="106" y="495" width="163" height="30"/>
+                                <state key="normal" title="Create new account 😀">
+                                    <color key="titleColor" red="0.95741778612136841" green="0.49613112211227417" blue="0.42617356777191162" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="Jsq-xb-MeB" kind="popoverPresentation" popoverAnchorView="WAd-YS-3Ek" id="Hq5-u7-u88">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
@@ -139,21 +141,71 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join with" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1i-vo-XnS">
-                                <rect key="frame" x="153" y="555" width="69" height="21"/>
+                                <rect key="frame" x="153" y="556" width="69" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="69" id="fV9-Wf-iW9"/>
-                                    <constraint firstAttribute="height" constant="21" id="maO-bf-F7M"/>
+                                    <constraint firstAttribute="height" constant="21" id="BqE-mU-6jS"/>
+                                    <constraint firstAttribute="width" constant="69" id="zGN-yv-jJT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Light" family="San Francisco Display" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucY-K8-GFl">
+                                <rect key="frame" x="182" y="533" width="11" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="ktl-Xq-Tl6"/>
+                                    <constraint firstAttribute="width" constant="11" id="wfE-iO-vZU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SanFranciscoText-Light" family="San Francisco Text" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuD-EQ-dMi">
+                                <rect key="frame" x="109" y="591" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7Nd-C6-nPE"/>
+                                    <constraint firstAttribute="width" constant="30" id="bMP-rO-xi0"/>
+                                </constraints>
+                                <state key="normal" title="G">
+                                    <color key="titleColor" red="0.35692417621612549" green="0.35294944047927856" blue="0.35284861922264099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="googleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u2K-qX-XbI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmw-SS-Aaa">
+                                <rect key="frame" x="172" y="591" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="A7C-8p-IBz"/>
+                                    <constraint firstAttribute="height" constant="30" id="CDu-XC-Cqq"/>
+                                </constraints>
+                                <state key="normal" title="T">
+                                    <color key="titleColor" red="0.35692417621612549" green="0.35294944047927856" blue="0.35284861922264099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="twitterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fiJ-da-z9Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDA-60-Idb">
+                                <rect key="frame" x="239" y="591" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="D5f-3b-kQG"/>
+                                    <constraint firstAttribute="height" constant="30" id="LEq-yg-MHO"/>
+                                </constraints>
+                                <state key="normal" title="L">
+                                    <color key="titleColor" red="0.35692417621612549" green="0.35294944047927856" blue="0.35284861922264099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="linkedinButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LJH-Z8-jZf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="h3V-o7-J56" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4dO-mn-UP5"/>
                             <constraint firstItem="LTI-bp-G5z" firstAttribute="width" secondItem="gq4-mn-Y1O" secondAttribute="width" id="5nj-o1-25V"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HVj-YV-rr3" secondAttribute="trailing" constant="45" id="66w-ln-FWA"/>
+                            <constraint firstItem="gmw-SS-Aaa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6S8-LL-gW1"/>
                             <constraint firstItem="laT-QM-srz" firstAttribute="top" secondItem="J3o-Ng-a6j" secondAttribute="bottom" constant="37" id="7cD-hc-Vh9"/>
                             <constraint firstItem="WAd-YS-3Ek" firstAttribute="centerX" secondItem="HKo-Tv-aud" secondAttribute="centerX" id="8R7-jL-Bgm"/>
                             <constraint firstItem="gq4-mn-Y1O" firstAttribute="leading" secondItem="YeA-XM-aND" secondAttribute="trailing" constant="-62" id="8SU-7J-dhU"/>
@@ -161,25 +213,32 @@
                             <constraint firstItem="LTI-bp-G5z" firstAttribute="top" secondItem="gq4-mn-Y1O" secondAttribute="bottom" constant="-1" id="E9p-uN-fgu"/>
                             <constraint firstItem="gq4-mn-Y1O" firstAttribute="top" secondItem="YeA-XM-aND" secondAttribute="bottom" constant="-20" id="EZA-zR-TIz"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="h3V-o7-J56" secondAttribute="bottom" id="FXa-8v-QVZ"/>
+                            <constraint firstItem="K1i-vo-XnS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FjG-Nm-w0G"/>
                             <constraint firstItem="J3o-Ng-a6j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J0Y-SJ-c8E"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OfP-Eo-AFr" secondAttribute="trailing" constant="45" id="N2l-qp-lxh"/>
                             <constraint firstItem="gq4-mn-Y1O" firstAttribute="top" secondItem="laT-QM-srz" secondAttribute="bottom" constant="21" id="N4O-R3-nO2"/>
                             <constraint firstItem="WAd-YS-3Ek" firstAttribute="top" secondItem="Dfr-MP-ddd" secondAttribute="bottom" constant="24" id="PTu-rc-sc4"/>
                             <constraint firstItem="LTI-bp-G5z" firstAttribute="centerX" secondItem="gq4-mn-Y1O" secondAttribute="centerX" id="ROs-Je-D4Z"/>
+                            <constraint firstItem="yDA-60-Idb" firstAttribute="top" secondItem="WAd-YS-3Ek" secondAttribute="bottom" constant="66" id="RaH-aq-bb3"/>
                             <constraint firstAttribute="trailing" secondItem="h3V-o7-J56" secondAttribute="trailing" id="Tw1-fQ-eMp"/>
-                            <constraint firstItem="HKo-Tv-aud" firstAttribute="top" secondItem="HVj-YV-rr3" secondAttribute="bottom" constant="34" id="Tzb-H3-Cap"/>
-                            <constraint firstItem="K1i-vo-XnS" firstAttribute="top" secondItem="WAd-YS-3Ek" secondAttribute="bottom" constant="34" id="Uu8-k1-hxs"/>
+                            <constraint firstItem="HKo-Tv-aud" firstAttribute="top" secondItem="HVj-YV-rr3" secondAttribute="bottom" constant="38" id="Tzb-H3-Cap"/>
+                            <constraint firstItem="ucY-K8-GFl" firstAttribute="top" secondItem="WAd-YS-3Ek" secondAttribute="bottom" constant="8" id="Vcv-JH-jph"/>
+                            <constraint firstItem="ucY-K8-GFl" firstAttribute="leading" secondItem="Dfr-MP-ddd" secondAttribute="leading" id="W6c-XJ-RJK"/>
                             <constraint firstItem="OfP-Eo-AFr" firstAttribute="top" secondItem="LTI-bp-G5z" secondAttribute="bottom" constant="2" id="WQt-up-zU3"/>
                             <constraint firstItem="HVj-YV-rr3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45" id="WsK-sS-urB"/>
                             <constraint firstItem="laT-QM-srz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X7W-08-5k7"/>
+                            <constraint firstItem="fuD-EQ-dMi" firstAttribute="top" secondItem="WAd-YS-3Ek" secondAttribute="bottom" constant="66" id="YQd-iM-KUc"/>
                             <constraint firstItem="LTI-bp-G5z" firstAttribute="leading" secondItem="1Eg-zz-RIL" secondAttribute="trailing" constant="-62" id="YkE-dM-LN6"/>
-                            <constraint firstItem="Dfr-MP-ddd" firstAttribute="top" secondItem="HVj-YV-rr3" secondAttribute="bottom" constant="11" id="dCu-Dk-fRh"/>
+                            <constraint firstItem="gmw-SS-Aaa" firstAttribute="top" secondItem="K1i-vo-XnS" secondAttribute="bottom" constant="14" id="bBL-c8-Re4"/>
+                            <constraint firstItem="Dfr-MP-ddd" firstAttribute="top" secondItem="HVj-YV-rr3" secondAttribute="bottom" constant="15" id="dCu-Dk-fRh"/>
                             <constraint firstItem="gq4-mn-Y1O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45" id="eTH-Pg-WsZ"/>
-                            <constraint firstItem="K1i-vo-XnS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gJH-Cs-W35"/>
+                            <constraint firstItem="gmw-SS-Aaa" firstAttribute="leading" secondItem="fuD-EQ-dMi" secondAttribute="trailing" constant="33" id="gCm-L3-NO8"/>
                             <constraint firstItem="h3V-o7-J56" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hbu-x1-jVa"/>
                             <constraint firstItem="LTI-bp-G5z" firstAttribute="top" secondItem="1Eg-zz-RIL" secondAttribute="bottom" constant="-20" id="kKb-Yo-cW3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="inD-w7-A36" secondAttribute="trailing" constant="17" id="p2d-zv-NmI"/>
                             <constraint firstItem="Dfr-MP-ddd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qol-N2-eE5"/>
+                            <constraint firstItem="K1i-vo-XnS" firstAttribute="top" secondItem="ucY-K8-GFl" secondAttribute="bottom" constant="9" id="rCx-fr-ecM"/>
+                            <constraint firstItem="yDA-60-Idb" firstAttribute="leading" secondItem="gmw-SS-Aaa" secondAttribute="trailing" constant="37" id="s3G-RO-UTC"/>
                             <constraint firstItem="HKo-Tv-aud" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uPU-ND-a7V"/>
                             <constraint firstItem="LTI-bp-G5z" firstAttribute="height" secondItem="gq4-mn-Y1O" secondAttribute="height" id="vck-gU-Ooz"/>
                             <constraint firstItem="inD-w7-A36" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wb0-KZ-s0K"/>
@@ -192,7 +251,10 @@
                     <navigationItem key="navigationItem" id="dLE-MZ-tT0"/>
                     <connections>
                         <outlet property="forgetPassword" destination="OfP-Eo-AFr" id="oHy-ry-hmg"/>
+                        <outlet property="googleButton" destination="fuD-EQ-dMi" id="zNu-Hl-3Ad"/>
+                        <outlet property="linkedinButton" destination="yDA-60-Idb" id="sUx-hB-8WH"/>
                         <outlet property="signInButton" destination="HVj-YV-rr3" id="GVt-YI-A49"/>
+                        <outlet property="twitterButton" destination="gmw-SS-Aaa" id="2fK-9j-Xrh"/>
                         <outlet property="welcomeText" destination="J3o-Ng-a6j" id="XgQ-16-Ckh"/>
                     </connections>
                 </viewController>
@@ -236,7 +298,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIRST NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waP-jh-lHW">
-                                <rect key="frame" x="59" y="159" width="52" height="12"/>
+                                <rect key="frame" x="59.5" y="159" width="51.5" height="12"/>
                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Light" family="San Francisco Display" pointSize="10"/>
                                 <color key="textColor" red="0.1334631741" green="0.1823148429" blue="0.25190103050000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -279,7 +341,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAST NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f52-YD-QfL">
-                                <rect key="frame" x="203" y="159" width="50" height="12"/>
+                                <rect key="frame" x="203.5" y="159" width="49.5" height="12"/>
                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Light" family="San Francisco Display" pointSize="10"/>
                                 <color key="textColor" red="0.1334631741" green="0.1823148429" blue="0.25190103050000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>

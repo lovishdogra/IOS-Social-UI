@@ -6,7 +6,13 @@ target 'loginUI' do
   use_frameworks!
 
   # Pods for loginUI
+use_frameworks!
+
 pod 'FontAwesome.swift'
 pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
+pod 'Fabric'
+pod 'Crashlytics'
+pod 'TwitterKit'
+pod 'Google/SignIn'
 
 end

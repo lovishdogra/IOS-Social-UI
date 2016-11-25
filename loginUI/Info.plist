@@ -16,10 +16,66 @@
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>li4850845</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.165327836898-f49l5e800253lhil403v4b2n22butv6e</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.lovishdogra.loginUI</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>eb6b197ecf58e1df99534fde3e0461ab191892f9</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict>
+					<key>consumerKey</key>
+					<string>64NeYMQBPBRvDIHfIXkg9FBOe</string>
+					<key>consumerSecret</key>
+					<string>Lv1Y5FiCYcHijT9cCa6hjEOOVFJn2HMKu5f2TROlDQK8EMDJLf</string>
+				</dict>
+				<key>KitName</key>
+				<string>Twitter</string>
+			</dict>
+		</array>
+	</dict>
+	<key>LIAppId</key>
+	<string>4850845</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SanFranciscoDisplay-Light.otf</string>
+		<string>SanFranciscoDisplay-Thin.otf</string>
+		<string>SanFranciscoDisplay-Ultralight.otf</string>
+		<string>SanFranciscoText-Light.otf</string>
+		<string>SanFranciscoText-LightItalic.otf</string>
+		<string>SanFranciscoText-Regular.otf</string>
+		<string>SanFranciscoText-RegularItalic.otf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -33,16 +89,6 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>UIAppFonts</key>
-	<array>
-		<string>SanFranciscoDisplay-Light.otf</string>
-		<string>SanFranciscoDisplay-Thin.otf</string>
-		<string>SanFranciscoDisplay-Ultralight.otf</string>
-		<string>SanFranciscoText-Light.otf</string>
-		<string>SanFranciscoText-LightItalic.otf</string>
-		<string>SanFranciscoText-Regular.otf</string>
-		<string>SanFranciscoText-RegularItalic.otf</string>
 	</array>
 </dict>
 </plist>
