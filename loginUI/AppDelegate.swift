@@ -10,6 +10,7 @@ import UIKit
 import Fabric
 import TwitterKit
 import Crashlytics
+import GoogleSignIn
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
@@ -26,10 +27,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
         //MARK: Twitter Signin delegate
         Fabric.with([Twitter.self,Crashlytics.self])
+        //Crashlytics.sharedInstance().recordError((configureError)!)
         
         return true
     }
     
+    //MARK: Linkedin Signin
     @nonobjc func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
         if LISDKCallbackHandler.shouldHandle(url as URL!) {
             return LISDKCallbackHandler.application(application, open: url as URL!, sourceApplication: sourceApplication, annotation: annotation)
@@ -37,6 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         return true
     }
     
+    //MARK: Google Signin
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         return GIDSignIn.sharedInstance().handle(url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
     }
@@ -44,14 +48,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     public func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if (error == nil) {
             // Perform any operations on signed in user here.
-            let userId = user.userID                  // For client-side use only!
-            let idToken = user.authentication.idToken // Safe to send to the server
+            //let userId = user.userID                  // For client-side use only!
+            //let idToken = user.authentication.idToken // Safe to send to the server
             let fullName = user.profile.name
             let givenName = user.profile.givenName
             let familyName = user.profile.familyName
             let email = user.profile.email
             // ...
-            print("UserID is \(userId), idtoken is \(idToken), Name is \(fullName), given name is \(givenName), family name is \(familyName), email is \(email)")
+            print("Name is \(fullName), given name is \(givenName), family name is \(familyName), email is \(email)")
+            
             
         } else {
             print("\(error.localizedDescription)")

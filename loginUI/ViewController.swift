@@ -32,6 +32,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     
     @IBAction func googleButton(_ sender: Any) {
         GIDSignIn.sharedInstance().signIn()
+        
     }
     
     @IBAction func twitterButton(_ sender: Any) {
@@ -55,6 +56,8 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     //MARK: View Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        GIDSignIn.sharedInstance().uiDelegate = self
         
         //MARK: Custom Social Buttons
         googleButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 30)
@@ -80,40 +83,36 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
         //MARK: Hide navigation controller
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         
-        //MARK: Google signin delegate
-        GIDSignIn.sharedInstance().uiDelegate = self
-        
+        if(GIDSignIn.sharedInstance().hasAuthInKeychain()){
+            print("already signedup")
+            if(shouldPerformSegue(withIdentifier: "ProfileVC", sender: self)){
+                print("possible")
+                performSegue(withIdentifier: "ProfileVC", sender: self)
+            }
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewController = storyboard.instantiateViewController(withIdentifier :"ProfileViewController")
+            self.present(viewController, animated: true)
+            
+        }
     }
     
-    // Implement these methods only if the GIDSignInUIDelegate is not a subclass of
-    // UIViewController.
-    
-    // Stop the UIActivityIndicatorView animation that was started when the user
-    // pressed the Sign In button
-    @nonobjc func signInWillDispatch(signIn: GIDSignIn!, error: NSError!) {
-        //googleActivityIndicator.stopAnimating()
+    func sign(_ signIn: GIDSignIn!, present viewController: UIViewController!) {
+        present(viewController, animated: true, completion: nil)
+    }
+    func sign(_ signIn: GIDSignIn!, dismiss viewController: UIViewController!) {
+        dismiss(animated: (viewController != nil), completion: nil)
     }
     
-    // Present a view that prompts the user to sign in with Google
-    @nonobjc func signIn(signIn: GIDSignIn!,
-                presentViewController viewController: UIViewController!) {
-        self.present(viewController, animated: true, completion: nil)
-    }
-    
-    // Dismiss the "Sign in with Google" view
-    @nonobjc func signIn(signIn: GIDSignIn!,
-                dismissViewController viewController: UIViewController!) {
-        self.dismiss(animated: true, completion: nil)
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        print(user.profile.email)
     }
     
     
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
 }
 
 //MARK: UILabel Extension for customization

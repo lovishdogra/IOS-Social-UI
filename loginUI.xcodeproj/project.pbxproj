@@ -16,6 +16,7 @@
 		214A9F711DE6E892000E90A0 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214A9F701DE6E892000E90A0 /* SignupViewController.swift */; };
 		214AEB1C1DE8077700FD99C4 /* linkedin-sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AEB1B1DE8077700FD99C4 /* linkedin-sdk.framework */; };
 		214AEB211DE80EF500FD99C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 214AEB201DE80EF500FD99C4 /* GoogleService-Info.plist */; };
+		214AEB231DE8260D00FD99C4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214AEB221DE8260D00FD99C4 /* ProfileViewController.swift */; };
 		9B420FBA150A6E75A7457CB4 /* Pods_loginUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EA7B472A706CEE0B3943741 /* Pods_loginUI.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		214AEB1B1DE8077700FD99C4 /* linkedin-sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "linkedin-sdk.framework"; sourceTree = "<group>"; };
 		214AEB1D1DE8079C00FD99C4 /* loginUI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "loginUI-Bridging-Header.h"; sourceTree = "<group>"; };
 		214AEB201DE80EF500FD99C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		214AEB221DE8260D00FD99C4 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		51A8B0D6B8AD92B2ABB7D78E /* Pods-loginUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loginUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-loginUI/Pods-loginUI.release.xcconfig"; sourceTree = "<group>"; };
 		9B2886D69E7AC7BF51BEBE31 /* Pods-loginUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loginUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-loginUI/Pods-loginUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +86,7 @@
 				214A9F481DE6A6EE000E90A0 /* ViewController.swift */,
 				214A9F701DE6E892000E90A0 /* SignupViewController.swift */,
 				214A9F6E1DE6B2FF000E90A0 /* LoginTextField.swift */,
+				214AEB221DE8260D00FD99C4 /* ProfileViewController.swift */,
 				214A9F4A1DE6A6EE000E90A0 /* Main.storyboard */,
 				214A9F4D1DE6A6EE000E90A0 /* Assets.xcassets */,
 				214A9F4F1DE6A6EE000E90A0 /* LaunchScreen.storyboard */,
@@ -267,6 +270,7 @@
 			files = (
 				214A9F6F1DE6B2FF000E90A0 /* LoginTextField.swift in Sources */,
 				214A9F491DE6A6EE000E90A0 /* ViewController.swift in Sources */,
+				214AEB231DE8260D00FD99C4 /* ProfileViewController.swift in Sources */,
 				214A9F711DE6E892000E90A0 /* SignupViewController.swift in Sources */,
 				214A9F471DE6A6EE000E90A0 /* AppDelegate.swift in Sources */,
 			);
