@@ -256,7 +256,7 @@
                         <outlet property="signInButton" destination="HVj-YV-rr3" id="GVt-YI-A49"/>
                         <outlet property="twitterButton" destination="gmw-SS-Aaa" id="2fK-9j-Xrh"/>
                         <outlet property="welcomeText" destination="J3o-Ng-a6j" id="XgQ-16-Ckh"/>
-                        <segue destination="QqG-gn-SQr" kind="show" identifier="ProfileVC" id="Bad-ya-uIg"/>
+                        <segue destination="7K2-Cf-pXG" kind="show" identifier="ProfileView" id="mmr-7u-7QB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -266,7 +266,7 @@
         <!--ProfileViewController-->
         <scene sceneID="o4W-23-MiR">
             <objects>
-                <viewController title="ProfileViewController" id="7K2-Cf-pXG" customClass="ProfileViewController" customModule="loginUI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" title="ProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7K2-Cf-pXG" customClass="ProfileViewController" customModule="loginUI" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PW0-Qi-Adf"/>
                         <viewControllerLayoutGuide type="bottom" id="VvY-EW-Gb6"/>
@@ -274,13 +274,42 @@
                     <view key="view" contentMode="scaleToFill" id="fhi-KT-vRk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xiM-a6-If4">
+                                <rect key="frame" x="67" y="70" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="0Rg-fb-Anc"/>
+                                    <constraint firstAttribute="width" constant="240" id="hMf-Zq-3Mq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rfy-C7-Uhq">
+                                <rect key="frame" x="67" y="361" width="240" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="bZ1-Hn-r4U"/>
+                                    <constraint firstAttribute="height" constant="21" id="qmu-dY-Erj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xiM-a6-If4" firstAttribute="centerX" secondItem="fhi-KT-vRk" secondAttribute="centerX" id="4xa-Lx-27G"/>
+                            <constraint firstItem="Rfy-C7-Uhq" firstAttribute="centerX" secondItem="fhi-KT-vRk" secondAttribute="centerX" id="4yE-7l-qU7"/>
+                            <constraint firstItem="xiM-a6-If4" firstAttribute="top" secondItem="PW0-Qi-Adf" secondAttribute="bottom" constant="50" id="fhh-i4-LqP"/>
+                            <constraint firstItem="Rfy-C7-Uhq" firstAttribute="top" secondItem="xiM-a6-If4" secondAttribute="bottom" constant="51" id="q5M-Tw-ALh"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PZa-ZE-7On"/>
+                    <connections>
+                        <outlet property="profileImageView" destination="xiM-a6-If4" id="KEZ-pk-tA4"/>
+                        <outlet property="usernameLabel" destination="Rfy-C7-Uhq" id="Jtw-hT-Sop"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FKC-Bn-mbE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1668" y="860"/>
+            <point key="canvasLocation" x="896.79999999999995" y="832.53373313343332"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="6ta-QX-XLc">
@@ -459,11 +488,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N1Z-JH-R8t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="897" y="861"/>
+            <point key="canvasLocation" x="55" y="833"/>
         </scene>
     </scenes>
     <resources>
         <image name="Base" width="750" height="1334"/>
         <image name="ico-logo" width="424" height="117"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="mmr-7u-7QB"/>
+    </inferredMetricsTieBreakers>
 </document>

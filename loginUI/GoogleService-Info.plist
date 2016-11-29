@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>165327836898-f49l5e800253lhil403v4b2n22butv6e.apps.googleusercontent.com</string>
+	<string>&lt;Enter Your Client ID here&gt;</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.165327836898-f49l5e800253lhil403v4b2n22butv6e</string>
+	<string>&lt;Enter your reverse Client ID here&gt;</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
@@ -23,6 +23,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:165327836898:ios:578f5c592f8f30bb</string>
+	<string>&lt;Enter google Client ID here&gt;</string>
 </dict>
 </plist>

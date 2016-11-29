@@ -38,9 +38,12 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     @IBAction func twitterButton(_ sender: Any) {
         Twitter.sharedInstance().logIn { (session: TWTRSession?, error) in
             if session != nil {
+                print("twitter")
                 print(session?.userName ?? "User is nil")
+                self.toggleProfileView()
             }
         }
+        
     }
     
     @IBAction func linkedinButton(_ sender: Any) {
@@ -87,12 +90,15 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
             print("already signedup")
             if(shouldPerformSegue(withIdentifier: "ProfileVC", sender: self)){
                 print("possible")
-                performSegue(withIdentifier: "ProfileVC", sender: self)
+                toggleProfileView()
             }
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let viewController = storyboard.instantiateViewController(withIdentifier :"ProfileViewController")
-            self.present(viewController, animated: true)
-            
+        }
+        
+        Twitter.sharedInstance().logIn { (session, error) in
+            if error == nil {
+                self.toggleProfileView()
+                print("ViewControllerPresented")
+            }
         }
     }
     
@@ -105,6 +111,15 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         print(user.profile.email)
+    }
+    
+    
+    func toggleProfileView(){
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let viewController = storyboard.instantiateViewController(withIdentifier :"ProfileViewController")
+//        //self.present(viewController, animated: true)
+//        self.navigationController?.pushViewController(viewController, animated: true)
+        performSegue(withIdentifier: "ProfileView", sender: self)
     }
     
     

@@ -7,13 +7,25 @@
 //
 
 import UIKit
+import TwitterKit
 
 class ProfileViewController: UIViewController {
+    
+    //MARK: Constants
+    let client = TWTRAPIClient.withCurrentUser()
+    
 
+    //MARK: IBOutlet
+    @IBOutlet var profileImageView: UIImageView!
+    @IBOutlet var usernameLabel: UILabel!
+    
+    //MARK: View Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
